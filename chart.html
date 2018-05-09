@@ -25,14 +25,15 @@ p {
 <body>
 	<h1>This is my test site</h1>
 	<p>and this is a chart</p>
-	
+	<p id="demo"></p>
 
-<div class="chart-container" style="position: relative; height:20vh; width:80vw">
+<div>
    	<canvas id="myChart"></canvas>
 </div>
-<div class="chart-container" style="position: relative; height:60vh; width:80vw">
+<div>
    	<canvas id="myChart2"></canvas>
 </div>
+	
 	<script>
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
@@ -69,6 +70,10 @@ var chart = new Chart(ctx, {
     },
    
 });
+		
+var myJSON = '{ "name":"John", "age":31, "city":"New York" }';
+var myObj = JSON.parse(myJSON);
+document.getElementById("demo").innerHTML = myObj.name;
 	</script>
 </body>
 
