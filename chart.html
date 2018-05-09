@@ -29,6 +29,9 @@ p {
 <div class="chart-container" style="position: relative; height:20vh; width:80vw">
    	<canvas id="myChart"></canvas>
 </div>
+<div class="chart-container" style="position: relative; height:20vh; width:80vw">
+   	<canvas id="myChart2"></canvas>
+</div>
 	<script>
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
@@ -47,7 +50,24 @@ var chart = new Chart(ctx, {
     },
    
 });
-	//Comment
+	//Second Chart
+		var ctx = document.getElementById('myChart2').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ["August", "September", "October", "November", "December"],
+        datasets: [{
+            label: "Times",
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [1, 2, 5, 2, 3, 4, 0],
+        }]
+    },
+   
+});
 	</script>
 </body>
 
