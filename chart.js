@@ -1,3 +1,5 @@
+<html>
+    <header>
 <canvas id="myChart" width="400" height="400"></canvas>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script>
@@ -39,3 +41,13 @@ var myChart = new Chart(ctx, {
     }
 });
 </script>
+</header>
+<body>
+    <div class="container">
+  <h2>Chart.js — Line Chart Demo</h2>
+  <div>
+    <canvas id="myChart"></canvas>
+  </div>
+</div>
+</body>
+</html>
