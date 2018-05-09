@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
 	<title>Line Chart</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
@@ -10,6 +9,8 @@
 </head>
 <body>
 	<h1>This is my test site</h1>
+	<canvas id="myChart" width="40" height="40"></canvas>
+
 	<script>
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
