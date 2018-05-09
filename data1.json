@@ -1,16 +1,16 @@
 [{
-    "name": "CH",
-    "category": "M40",
+    "name": "Stephen Fitz",
+    "category": "Male <40",
     "clocktime": "11:33",
     "handicap": "02:15",
-    "origin": "sea"
+    "origin": "Team Sea"
   },
   {
     "name": "AM",
     "category": "M60",
     "clocktime": "14:15",
     "handicap": "06:30",
-    "origin": "land"
+    "origin": "Team land"
   },
   {
     "name": "DZ",
