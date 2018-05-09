@@ -2,15 +2,26 @@
 <html>
 <head>
 	<title>Line Chart</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-	<canvas id="myChart" width="40" height="40"></canvas>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="chart.css">
+<sytle>
+h1 {
+    color: red;
+    text-align: center;
+}
+.default {
+	    color: red;
+    text-align: center;
+	}
+</style>
 </head>
 <body>
 	<h1>This is my test site</h1>
-	<canvas id="myChart" width="40" height="40"></canvas>
+	
 
+<div class="chart-container" style="position: relative; height:40vh; width:80vw">
+   	<canvas id="myChart" width="40" height="40"></canvas>
+</div>
 	<script>
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
@@ -34,7 +45,4 @@ var chart = new Chart(ctx, {
 </body>
 
 </html>
-
-https://www.brighttalk.com/webcast/14809/318097?utm_campaign=add-to-calendar&utm_medium=calendar&utm_source=brighttalk-transact
-
 
