@@ -4,7 +4,7 @@
 <head>
 	<title>Line Chart</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-	<canvas id="myChart" width="100" height="100"></canvas>
+	<canvas id="myChart" width="40" height="40"></canvas>
 
 <link rel="stylesheet" type="text/css" href="chart.css">
 </head>
@@ -26,17 +26,7 @@ var chart = new Chart(ctx, {
             data: [15, 10, 5, 2, 20, 30, 1],
         }]
     },
-
-    // Configuration options go here
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:false
-                }
-            }]
-        }
-    }
+   
 });
 	//Comment
 	</script>
