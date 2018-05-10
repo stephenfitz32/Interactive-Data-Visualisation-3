@@ -78,17 +78,26 @@ var myJSON = '{ "name": "Stephen Fitz","category": "Male <40","clocktime": "11:3
 var myJSON1 = '{ "name": "Stephen Fitzpatrick","category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Sea"}'
 var myJSONArray = '{"swimmers":[{ "firstName":"John", "lastName":"Doe" },{ "firstName":"Anna", "lastName":"Smith" },{ "firstName":"Peter","lastName":"Jones" }]}'
 		
-var myObj = JSON.parse(myJSON);
-document.getElementById("demo").innerHTML = myObj.name;
-var myObj1 = JSON.parse(myJSON1);		
-document.getElementById("demo2").innerHTML = myObj1.name;
+// var myObj = JSON.parse(myJSON);
+// document.getElementById("demo").innerHTML = myObj.name;
+// var myObj1 = JSON.parse(myJSON1);		
+// document.getElementById("demo2").innerHTML = myObj1.name;
 		
 var myObjArray = JSON.parse(myJSONArray);		
 
-for (i in myObjArray.swimmers) {
-    document.getElementById("demo4").innerHTML = myObjArray.swimmers[i].firstName;
-}	
+// for (i in myObjArray.swimmers) {
+//    document.getElem
+//	entById("demo4").innerHTML = myObjArray.swimmers[i].firstName;
+//	x += "<h1>" + myObj.cars[i].name + "</h1>";
+//}	
 
+		
+for (i in myObjArray.swimmers) {
+    x += "<h2>" + myObjArray.swimmers[i].firstName + "</h2>";
+}
+
+document.getElementById("demo4").innerHTML = x;		
+		
 </script>
 </body>
 
