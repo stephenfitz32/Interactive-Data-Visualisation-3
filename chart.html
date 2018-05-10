@@ -92,11 +92,13 @@ var myObjArray = JSON.parse(myJSONArray);
 //}	
 
 		
+var x = "";
+
 for (i in myObjArray.swimmers) {
-    x += "<h2>" + myObjArray.swimmers[i].firstName + "</h2>";
+    x += myObjArray.swimmers[i] + "<br>";
 }
 
-document.getElementById("demo4").innerHTML = x;		
+document.getElementById("demo4").innerHTML = x;
 		
 </script>
 </body>
