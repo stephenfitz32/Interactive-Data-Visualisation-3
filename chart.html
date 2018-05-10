@@ -75,12 +75,16 @@ var chart = new Chart(ctx, {
 		
 var myJSON = '{ "name": "Stephen Fitz","category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Sea"}'
 var myJSON1 = '{ "name": "Stephen Fitzpatrick","category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Sea"}'
-var myJsonArray = '{"swimmers":[{ "firstName":"John", "lastName":"Doe" },{ "firstName":"Anna", "lastName":"Smith" },{ "firstName":"Peter","lastName":"Jones" }]}'
+var myJSONArray = '{"swimmers":[{ "firstName":"John", "lastName":"Doe" },{ "firstName":"Anna", "lastName":"Smith" },{ "firstName":"Peter","lastName":"Jones" }]}'
 		
 var myObj = JSON.parse(myJSON);
 document.getElementById("demo").innerHTML = myObj.name;
 var myObj1 = JSON.parse(myJSON1);		
 document.getElementById("demo2").innerHTML = myObj1.name;
+		
+var myObjArray = JSON.parse(myJSONArray);		
+document.getElementById("demo3").innerHTML = myObjArray.Swimmers[0];
+
 	</script>
 </body>
 
