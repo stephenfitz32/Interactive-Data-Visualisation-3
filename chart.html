@@ -70,7 +70,7 @@ var chart = new Chart(ctx, {
    
 });
 		
-var myJSON = '{ "name": "Stephen Fitz","category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Sea"},
+var myJSON = '{ "name": "Stephen Fitz","category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Sea"}';
  var myJSONArray = '{"swimmers":["name": "AM" , "category": "M60", "clocktime": "14:15", "handicap": "06:30","origin": "Team land"
   },
   {
@@ -93,7 +93,7 @@ document.getElementById("demo").innerHTML = myObj.name;
 		
 var myObjArray = JSON.parse(myJSONArray);		
 for (i in myObjArray.swimmers) {
-    x += myObjArray.swimmers[i].lastName + '<br>';
+    x += myObjArray.swimmers[i].name + '<br>';
 }
 		
 	</script>
