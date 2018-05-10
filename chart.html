@@ -86,7 +86,8 @@ document.getElementById("demo2").innerHTML = myObj1.name;
 var myObjArray = JSON.parse(myJSONArray);		
 
 for (i in myObjArray.swimmers) {
-    document.getElementById("demo4").innerHTML = myObjArray.swimmers[1].firstName;
+    document.getElementById("demo4").innerHTML = myObjArray.swimmers[i].firstName;
+    document.getElementById("demo"+i).innerHTML = myObjArray.swimmers[i].firstName;
 }	
 
 </script>
