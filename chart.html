@@ -38,23 +38,7 @@ p {
 
 	
 	<script>
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'bar',
 
-    // The data for our dataset
-    data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
-        datasets: [{
-            label: "Times",
-            backgroundColor: 'rgb(255, 99, 132)',
-            borderColor: 'rgb(255, 99, 132)',
-            data: [15, 10, 5, 2, 20, 30, 1],
-        }]
-    },
-   
-});
 	//Second Chart
 		var ctx = document.getElementById('myChart2').getContext('2d');
 var chart = new Chart(ctx, {
@@ -93,12 +77,33 @@ var myObjArray = JSON.parse(myJSONArray);
 
 		
 var x = "";
+var y = "1,2,3,4";
 
 for (i in myObjArray.swimmers) {
-    x += myObjArray.swimmers[i].firstName + "<br>";
+    x += '"'+myObjArray.swimmers[i].firstName + ",";
 }
 
 document.getElementById("demo4").innerHTML = x;
+	
+
+		
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: [X],
+        datasets: [{
+            label: "Times",
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [y],
+        }]
+    },
+   
+});
 		
 </script>
 </body>
