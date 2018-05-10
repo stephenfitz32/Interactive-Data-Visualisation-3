@@ -23,8 +23,8 @@ p {
 <body>
 	<h1>This is my test site</h1>
 	<p>This is a chart</p>
-	<p id="demo"></p>
-	<p id="demo2"></p>
+	<p id="demo">r</p>
+	<p id="demo2">g</p>
 
 <div>
    	<canvas id="myChart"></canvas>
@@ -32,16 +32,7 @@ p {
 <div>
    	<canvas id="myChart2"></canvas>
 </div>
-	<script>
-	var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        var myObj = JSON.parse(this.responseText);
-        document.getElementById("demo2").innerHTML = myObj.name;
-    }
-};
-xmlhttp.open("GET", "data1.json", true);
-xmlhttp.send();
+
 	</script>
 	
 	<script>
@@ -102,7 +93,7 @@ document.getElementById("demo").innerHTML = myObj.name;
 		
 var myObjArray = JSON.parse(myJSONArray);		
 for (i in myObjArray.swimmers) {
-    x += myObjArray.swimmers[i].lastName + "<br>";
+    x += myObjArray.swimmers[i].lastName + '<br>';
 }
 		
 	</script>
