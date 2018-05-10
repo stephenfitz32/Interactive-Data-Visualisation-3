@@ -77,7 +77,7 @@ var myObjArray = JSON.parse(myJSONArray);
 
 		
 var x = "";
-var y = "1,2,3,4";
+var y = 1,2,3;
 
 for (i in myObjArray.swimmers) {
     x += '"'+myObjArray.swimmers[i].lastName + '",';
@@ -99,7 +99,7 @@ var chart = new Chart(ctx, {
             label: "Times",
             backgroundColor: 'rgb(255, 99, 132)',
             borderColor: 'rgb(255, 99, 132)',
-            data: [1,2,3],
+            data: [y],
         }]
     },
    
