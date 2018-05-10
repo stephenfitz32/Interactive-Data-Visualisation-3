@@ -71,22 +71,7 @@ var chart = new Chart(ctx, {
 });
 		
 var myJSON = '{ "name": "Stephen Fitz","category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Sea"}';
- var myJSONArray = '{"swimmers":["name": "AM" , "category": "M60", "clocktime": "14:15", "handicap": "06:30","origin": "Team land"
-  },
-  {
-    "name": "DZ",
-    "category": "M40",
-    "clocktime": "22:15",
-    "handicap": "00:00",
-    "origin": "sea"
-  },
-  {
-    "name": "CC",
-    "category": "M50",
-    "clocktime": "22:20",
-    "handicap": "05:00",
-    "origin": "land"
-	  }]}';
+ var myJSONArray = '{"swimmers":["name": "AM" , "category": "M60", "clocktime": "14:15", "handicap": "06:30","origin": "Team land"]}';
 		
 var myObj = JSON.parse(myJSON);
 document.getElementById("demo").innerHTML = myObj.name;
