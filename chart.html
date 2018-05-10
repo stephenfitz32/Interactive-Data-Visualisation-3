@@ -35,15 +35,8 @@ p {
    	<canvas id="myChart2"></canvas>
 </div>
 	<script>
-	var xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        var myObj = JSON.parse(this.responseText);
-        document.getElementById("demo2").innerHTML = myObj.name;
-    }
-};
-xmlhttp.open("GET", "data1.json", true);
-xmlhttp.send();
+	document.getElementById("json").innerHTML = "<h5>data1.json</h5>" + "<pre>" + JSON.stringify(newdata, null, 2) + "</pre>";
+
 	</script>
 	
 	<script>
