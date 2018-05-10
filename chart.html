@@ -78,7 +78,7 @@ var x = "";
 var y = 1,2,3;
 
 for (i in myObjArray.swimmers) {
-    x += '"'+myObjArray.swimmers[i].lastName + '",';
+    x += myObjArray.swimmers[i].lastName + "<br>";
 }
 // x = x.slice(0, -1);
 document.getElementById("demo4").innerHTML = x;
