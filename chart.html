@@ -34,10 +34,7 @@ p {
 <div>
    	<canvas id="myChart2"></canvas>
 </div>
-	<script>
-	document.getElementById("json").innerHTML = "<h5>data1.json</h5>" + "<pre>" + JSON.stringify(newdata, null, 2) + "</pre>";
 
-	</script>
 	
 	<script>
 var ctx = document.getElementById('myChart').getContext('2d');
@@ -77,14 +74,13 @@ var chart = new Chart(ctx, {
 });
 		
 var myJSON = '{ "name": "Stephen Fitz","category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Sea"}'
-var myJSON1 = '{ "name": "Stephen Fitz","category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Sea"}'
-
-
-var myJsonArray = '{"employees":[{ "firstName":"John", "lastName":"Doe" },{ "firstName":"Anna", "lastName":"Smith" },{ "firstName":"Peter","lastName":"Jones" }]}'
-		
+var myJSON1 = '{ "name": "Stephen Fitzpatrick","category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Sea"}'
+var myJsonArray = '{"swimmers":[{ "firstName":"John", "lastName":"Doe" },{ "firstName":"Anna", "lastName":"Smith" },{ "firstName":"Peter","lastName":"Jones" }]}'
 		
 var myObj = JSON.parse(myJSON);
 document.getElementById("demo").innerHTML = myObj.name;
+var myObj1 = JSON.parse(myJSON1);		
+document.getElementById("demo2").innerHTML = myObj1.name;
 	</script>
 </body>
 
