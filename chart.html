@@ -83,7 +83,70 @@ var chart = new Chart(ctx, {
    
 });
 		
-var myJSON = '{ "name":"John", "age":31, "city":"New York" }';
+var myJSON = '{ "name": "Stephen Fitz","category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Sea"},
+  {
+    "name": "AM",
+    "category": "M60",
+    "clocktime": "14:15",
+    "handicap": "06:30",
+    "origin": "Team land"
+  },
+  {
+    "name": "DZ",
+    "category": "M40",
+    "clocktime": "22:15",
+    "handicap": "00:00",
+    "origin": "sea"
+  },
+  {
+    "name": "CC",
+    "category": "M50",
+    "clocktime": "22:20",
+    "handicap": "05:00",
+    "origin": "land"
+  },
+  {
+    "name": "IS",
+    "category": "M50",
+    "clocktime": "10:21",
+    "handicap": "04:45",
+    "origin": "sky"
+  },
+  {
+    "name": "LM",
+    "category": "M40",
+    "clocktime": "22:21",
+    "handicap": "03:00",
+    "origin": "land"
+  },
+  {
+    "name": "SB",
+    "category": "M50",
+    "clocktime": "22:22",
+    "handicap": "02:30",
+    "origin": "sea"
+  },
+  {
+    "name": "SD",
+    "category": "M60",
+    "clocktime": "22:23",
+    "handicap": "04:15",
+    "origin": "sky"
+  },
+  {
+    "name": "RV",
+    "category": "M60",
+    "clocktime": "22:57",
+    "handicap": "06:45",
+    "origin": "land"
+  },
+  {
+    "name": "YK",
+    "category": "M60",
+    "clocktime": "23:04",
+    "handicap": "05:15",
+    "origin": "sea"
+}';
 var myObj = JSON.parse(myJSON);
 document.getElementById("demo").innerHTML = myObj.name;
 	</script>
