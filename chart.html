@@ -73,15 +73,15 @@ var myObj, i, x = "";
 myObj = {
     "name":"John",
     "age":30,
-    "cars": [
+    "swimmers": [
         { "name":"Ford", "models":[ "Fiesta", "Focus", "Mustang" ] },
         { "name":"BMW", "models":[ "320", "X3", "X5" ] },
         { "name":"Fiat", "models":[ "500", "Panda" ] }
     ]
  }
 
-for (i in myObj.cars) {
-    x += myObj.cars[i].name + "<br>";
+for (i in myObj.swimmers) {
+    x += myObj.swimmers[i].name + "<br>";
 }
 
 document.getElementById("demo").innerHTML = x;
