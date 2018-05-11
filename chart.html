@@ -71,10 +71,12 @@ var chart = new Chart(ctx, {
 });
 		
 var myJSON = {"name": "Stephen Fitz","category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Sea"};
-var myJSONArray = {"cars": [
-        { "name":"Ford", "category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Sea"},
-        { "name":"BMW", "category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Sea" },
-        { "name":"Fiat","category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Sea"}]};
+/*
+var myJSONArray = {"swimmers": [
+       { "name":"Tom", "category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Sea"},
+        { "name":"James", "category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Land" },
+        { "name":"Peter","category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Air"}]};
+	*/
 		
 var myObj = JSON.parse(myJSON);
 document.getElementById("demo").innerHTML = myObj.name;
