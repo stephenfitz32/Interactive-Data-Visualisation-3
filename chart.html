@@ -37,7 +37,7 @@ p {
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
-    type: 'bar',
+    type: 'line',
     // The data for our dataset
     data: {
         labels: ["January", "February", "March", "April", "May", "June", "July"],
@@ -68,24 +68,21 @@ var chart = new Chart(ctx, {
    
 });
 		
-var myJSON = { "name":"Tom", "category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Sea"};
-/*
-var myJSONArray = {"swimmers": [
-       { "name":"Tom", "category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Sea"},
-        { "name":"James", "category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Land" },
-        { "name":"Peter","category": "Male <40","clocktime": "11:33","handicap": "02:15", "origin": "Team Air"}]};
-	*/
-		
-var myObj = JSON.parse(myJSON);
-document.getElementById("demo").innerHTML = myObj.name;
-document.getElementById("demo2").innerHTML = myJSON.name;
-		
-// var myObjArray = JSON.parse(myJSONArray);		
-// for (i in myObjArray.swimmers) {
-//    x += myObjArray.swimmers[i].name + '<br>';
-// }
-		
-	</script>
+
+var myObj, i, x = "";
+myObj = {
+    "name":"John",
+    "age":30,
+    "cars":[ "Ford", "BMW", "Fiat" ]
+};
+
+for (i in myObj.cars) {
+    x += myObj.cars[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = x;
+
+</script>
 </body>
 
 </html>
