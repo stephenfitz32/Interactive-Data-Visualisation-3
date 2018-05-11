@@ -48,7 +48,8 @@ myObj = {
 
 for (i in myObj.swimmers) {
     x += myObj.swimmers[i].name + "<br>";
-    y += myObj.swimmers[i].finishTime;
+    //y += myObj.swimmers[i].finishTime;
+    y[i] =[myObj.swimmers[i].finishTime];
     }
 document.getElementById("demo2").innerHTML = y;
 	
@@ -62,7 +63,7 @@ var chart = new Chart(ctx, {
     // The data for our dataset
     data: {
        // labels: ["e","d","m","h","d"],
-        labels: y,
+        labels: ["1","2","3"],
 	    datasets: [{
             label: "Times",
             backgroundColor: 'rgb(255, 99, 132)',
