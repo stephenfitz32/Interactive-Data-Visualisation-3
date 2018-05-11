@@ -36,6 +36,8 @@ p {
 <script>
 	
 var myObj, i, x = "";
+var y = "";
+	
 myObj = {
      "swimmers": [
         { "name":"Ford", "finishTime": "4"},
@@ -46,6 +48,8 @@ myObj = {
 
 for (i in myObj.swimmers) {
     x += myObj.swimmers[i].name + "<br>";
+    y += myObj.swimmers[i].name;
+    
 }
 var chartData = [ 1,2,3,4,5];
 document.getElementById("demo").innerHTML = x;
@@ -56,7 +60,7 @@ var chart = new Chart(ctx, {
     type: 'line',
     // The data for our dataset
     data: {
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        labels: y,
         datasets: [{
             label: "Times",
             backgroundColor: 'rgb(255, 99, 132)',
