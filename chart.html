@@ -45,13 +45,26 @@ myObj = {
         { "name":"Fiat", "finishTime":"2" }
     ]
  }
+	
 
 for (i in myObj.swimmers) {
     x += myObj.swimmers[i].name + "<br>";
     //y += myObj.swimmers[i].finishTime;
-    y[i] =[myObj.swimmers[i].finishTime];
+    //y[i] =[myObj.swimmers[i].finishTime];
     }
-document.getElementById("demo2").innerHTML = y;
+//document.getElementById("demo2").innerHTML = y;
+	
+	
+function convertToArray(obj) {
+    return Object.keys(obj).map(function(key) {
+        return obj[key];
+    });
+}
+
+var obj1 = JSON.parse('{"0":"name1","2":"name2","3":"name3","4":"name4"}');
+obj1 = convertToArray(obj1);
+
+	
 	
 var chartData = [1,2,3,4,5];
 document.getElementById("demo").innerHTML = x;
@@ -63,7 +76,7 @@ var chart = new Chart(ctx, {
     // The data for our dataset
     data: {
        // labels: ["e","d","m","h","d"],
-        labels: ["1","2","3"],
+        labels: obj1,
 	    datasets: [{
             label: "Times",
             backgroundColor: 'rgb(255, 99, 132)',
