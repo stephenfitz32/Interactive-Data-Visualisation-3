@@ -34,6 +34,22 @@ p {
 </div>
 
 <script>
+	
+var myObj, i, x = "";
+myObj = {
+     "swimmers": [
+        { "name":"Ford", "finishTime": "4"},
+        { "name":"BMW", "finishTime":"3"},
+        { "name":"Fiat", "finishTime":"2" }
+    ]
+ }
+
+for (i in myObj.swimmers) {
+    x += myObj.swimmers[i].name + "<br>";
+}
+var chartData = [ 1,2,3,4,5];
+document.getElementById("demo").innerHTML = x;
+	
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
@@ -67,22 +83,7 @@ var chart = new Chart(ctx, {
     },
    
 });
-		
-
-var myObj, i, x = "";
-myObj = {
-     "swimmers": [
-        { "name":"Ford", "finishTime": "4"},
-        { "name":"BMW", "finishTime":"3"},
-        { "name":"Fiat", "finishTime":"2" }
-    ]
- }
-
-for (i in myObj.swimmers) {
-    x += myObj.swimmers[i].name + "<br>";
-}
-
-document.getElementById("demo").innerHTML = x;
+	
 
 </script>
 </body>
