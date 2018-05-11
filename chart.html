@@ -40,9 +40,9 @@ var y;
 	
 myObj = {
      "swimmers": [
-        { "name":"Ford", "finishTime": "4"},
-        { "name":"BMW", "finishTime":"3"},
-        { "name":"Fiat", "finishTime":"2" }
+        { "name":"I", "finishTime": "4"},
+        { "name":"Love", "finishTime":"3"},
+        { "name":"Charts", "finishTime":"2" }
     ]
  }
 	
@@ -63,6 +63,14 @@ function convertToArray(obj) {
 
 var obj1 = JSON.parse('{"0":"name1","2":"name2","3":"name3","4":"name4"}');
 obj1 = convertToArray(obj1);
+	
+var obj2 = JSON.parse('{"swimmers": [
+        { "name":"I", "finishTime": "4"},
+        { "name":"Love", "finishTime":"3"},
+        { "name":"Charts", "finishTime":"2" }
+    ]}');
+obj2 = convertToArray(obj2);
+
 
 	
 	
